@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="browser.jpg" alt="Браузер" id="image" onclick="changeImage()">
+	<script>
+		function changeImage() {
+			var image = document.getElementById('image');
+
+			if (image.src.match("browser")){
+				image.src = "css3.png";
+				image.src = "HTML.png";
+			} else {
+			
+			image.src = "browser.jpg";
+
+			} 
+		}
+	</script>
+</body>
+</html>
